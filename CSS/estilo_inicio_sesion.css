@@ -1,0 +1,304 @@
+/* estoy importando una fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+
+
+
+/*menu*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+.menu li form.barra_buscar {
+  display: flex;
+  align-items: center;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background:rgb(38, 34, 28);
+}
+
+.container__menu {
+  width: 100%;
+  height: 70px;
+  background: rgba(4, 75, 4, 0.767);
+  padding: 0px 20px;
+  position: relative;
+}
+
+.menu {
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav > ul {
+  height: 100%;
+  display: flex;
+  list-style: none;
+}
+
+nav > ul > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+nav > ul > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all center 300ms;
+}
+
+nav > ul > li > a:hover {
+  transform: scale(1.1);
+  background: rgb(39, 145, 39);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/* buscador */
+/*
+.menu li form.barra_buscar {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  height: 10px;
+  
+}
+
+.menu li form.barra_buscar input[type="text"] {
+  width: 150px; /* ajusta el tamaño de la entrada de texto *//*
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  margin-right: 0px;
+  height: 100%;
+}
+
+.menu li form.barra_buscar button[type="submit"] {
+  padding: 10px 15px;
+  background: #04ab04;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  height: 100%;
+}
+
+.menu li form.barra_buscar button[type="submit"]:hover {
+  background: #038603;
+}
+
+.menu li form.barra_buscar {
+  display: flex;
+  align-items: center;
+  margin-left: 630px;
+  height: 30px;
+}
+
+*/
+
+
+
+/* aqui le agrego una imagen de fondo a todo el body*/
+
+body {
+    background-image: url('C:/Users/piame/Desktop/Comida_Dos/img/cafe2.jpg');
+    background-size: cover;
+  }
+
+
+  .titulo_registro{
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/* aqui va el formulario de registro */
+
+
+:root {
+  --colorTextos: #49454567;
+}
+
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+
+  font-family: 'Roboto';
+  background: linear-gradient(to right, #221f1c, #352e26);
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{    /* registrarse titulo */
+  text-align: center;
+  font-weight: 700;
+  color:#574f40;
+ 
+}
+
+form{   /* todo el formulario  */
+  background: #fff;
+  padding: 40px 0;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);  /* sombra blanca */
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+
+
+form .grupo{
+  position: relative;
+  margin: 45px ;
+  
+}
+
+input{    /* letra input */
+  background: none;
+  color: #666666;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--colorTextos);
+}
+
+
+
+input:focus{    /* letra del input al escribir */
+  outline: none;
+  color: #5e5d5d;
+}
+
+label{
+ 
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+  top: -14px;
+  font-size: 12px;
+  color: #397737;
+}
+
+.barra{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.barra::before{ /* barra de abajo input*/
+  
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right,#539648, #77ac7c);
+  transition: 0.3s ease width;
+  left: 0;
+}
+
+input:focus~.barra::before{   /* barra de abajo input */
+  width: 100%;
+} 
+
+.warnings{   /* mensaje de errorr */
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #574f40;
+  padding-top: 20px;
+}
+
+button{   /* boton enviar*/
+  font-family: 'roboto';
+  background: linear-gradient(to right, #539648, #77ac7c);
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.warnings.sent {
+  color: rgb(42, 195, 42);
+}
+
+@media screen and (max-width:500px){
+  form{
+      width: 80%;
+  }
+}
+
+.mensaje {
+  color: red;
+  font-weight: bold;
+}
+
+.bad{
+  text-align: center;
+  margin-left: 10px;
+}
+
+
+
+  
+  /* ultima parte del footer */
+
+
+.clearfix{
+    background-color: rgba(82, 110, 82, 0.767);
+    color: white;
+    text-align: center;
+    height: 100px;
+    line-height: 30px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}

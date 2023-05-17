@@ -1,0 +1,180 @@
+/* estoy importando una fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background:white;
+}
+
+
+/*header superior*/
+
+.superior{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.search{
+  width: 300px;
+  padding: 10px;
+}
+
+.container__menu{
+  width: 100%;
+  height: 70px;
+  background: rgba(4, 75, 4, 0.767);
+  padding: opx 20px;
+}
+
+.menu{
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+}
+
+nav{
+  height: 100%;
+}
+
+nav > ul{    
+  height: 100%;
+  display: flex;
+}
+
+nav > ul > li{
+  height: 100%;
+  list-style: none;
+}
+
+nav > ul > li > a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+ padding: 14px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px; 
+  transition: all center 300ms;
+}
+
+nav > ul > li > a:hover{
+  transform: scale(1.1);
+  background: rgb(39, 145, 39);
+  box-shadow: 0px 0px 10px 0px rgba(0 , 0 , 0 , 0.5);
+
+}
+
+#selected{
+  transform: scale(1.1);
+  background: rgb(39, 145, 39);
+  box-shadow: 0px 0px 10px 0px rgba(0 , 0 , 0 , 0.5);
+}
+
+/*submenu*/
+
+nav ul li ul{
+  width: 200px;
+  display: flexbox;
+  flex-direction: column;
+  background: white;
+  position: absolute;
+  top: 200px;
+  left: -5px;
+  padding: 14px 0px;
+  *visibility: hidden;
+  *opacity: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0 , 0 , 0 , 0.5);
+  z-index: 10;
+  transition: all 300ms ease;
+}
+
+nav ul li:hover ul{
+  visibility: visible;
+  opacity: 1;
+  top: 70px;
+
+}
+
+
+
+/*submenu1*/
+
+#submenu1{
+  width: 200px;
+  display: flexbox ;
+  flex-direction: column;
+  background: white;
+  position: absolute;
+  top: 90px;
+  left: 350px;
+  padding: 14px 0px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0 , 0 , 0 , 0.5);
+  z-index: 10;
+  transition: all 300ms ease;
+
+}
+
+li:hover #submenu1{
+  visibility: visible;
+  opacity: 1;
+  top: 70px;
+}
+
+
+
+
+
+
+
+/* aqui le agrego una imagen de fondo a todo el body*/
+
+body {
+    background-image: url('C:/Users/piame/Desktop/Comida_Dos/img/cafe2.jpg');
+    background-size: cover;
+  }
+
+
+
+
+
+
+  
+  /* ultima parte del footer */
+
+
+.clearfix{
+    background-color: rgba(82, 110, 82, 0.767);
+    color: white;
+    text-align: center;
+    height: 100px;
+    line-height: 30px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
